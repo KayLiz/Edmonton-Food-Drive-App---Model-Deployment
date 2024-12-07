@@ -1,6 +1,7 @@
 # Edmonton Food Drive Model-Deployment 2024
 ## 📌 Project Overview  
-The **Edmonton Food Drive App** is a machine learning-powered solution designed to predict donation bag volumes and optimize route completion times for the annual food drive organized by the Church of Jesus Christ of Latter-day Saints. This application focuses on improving operational efficiency and forecasting donation outcomes to support better planning for future food drives across Edmonton's wards and stakes.  
+The **Edmonton Food Drive App** is a machine learning-powered solution designed to predict donation bag volumes and optimize route completion times for the annual food drive organized by the Church of Jesus Christ of Latter-day Saints. This application focuses on improving operational efficiency and forecasting donation outcomes to support better planning for future food drives across Edmonton's wards and stakes. This involves building prediction models to understand the relationship between various factors such as volunteer numbers, route details, and donations received.
+ 
 
 This project involves the full machine learning pipeline, including **data collection, cleaning, exploratory data analysis (EDA), model development, deployment**, and a user-friendly interface built with **Streamlit**.  
 
