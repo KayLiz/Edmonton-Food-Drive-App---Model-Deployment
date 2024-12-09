@@ -63,18 +63,24 @@ def dashboard():
 # Page 2: Exploratory Data Analysis (EDA) 
 def exploratory_data_analysis():
     # Set the page title
+    import streamlit as st
+
+def exploratory_data_analysis():
+    # Set the page title
     st.subheader("Visualization of trends from 2023 to 2024")
-    
+
     # Embed Tableau visualization using HTML iframe and JavaScript
     st.markdown(
         """
         <div class='tableauPlaceholder' id='viz1733358354835' style='position: relative;'>
             <noscript>
                 <a href='#'>
-                    <img alt='Edmonton Food Drive - Time Series Analysis (2023 - 2024)' src='https://public.tableau.com/static/images/ED/EDA-Demo/NoOutliersDashboard/1_rss.png' style='border: none' />
+                    <img alt='Edmonton Food Drive - Time Series Analysis (2023 - 2024)' 
+                         src='https://public.tableau.com/static/images/ED/EDA-Demo/NoOutliersDashboard/1_rss.png' 
+                         style='border: none' />
                 </a>
             </noscript>
-            <object class='tableauViz' style='display:none;'>
+            <object class='tableauViz' style='display: none;'>
                 <param name='host_url' value='https://public.tableau.com/' />
                 <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
@@ -93,23 +99,23 @@ def exploratory_data_analysis():
         <script type='text/javascript'>
             var divElement = document.getElementById('viz1733358354835');
             var vizElement = divElement.getElementsByTagName('object')[0];
-            if ( divElement.offsetWidth > 800 ) { 
-                vizElement.style.minWidth='420px'; 
-                vizElement.style.maxWidth='1350px'; 
-                vizElement.style.width='100%'; 
-                vizElement.style.minHeight='587px'; 
-                vizElement.style.maxHeight='887px'; 
-                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-            } else if ( divElement.offsetWidth > 500 ) { 
-                vizElement.style.minWidth='420px'; 
-                vizElement.style.maxWidth='1350px'; 
-                vizElement.style.width='100%'; 
-                vizElement.style.minHeight='587px'; 
-                vizElement.style.maxHeight='887px'; 
-                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            if (divElement.offsetWidth > 800) { 
+                vizElement.style.minWidth = '420px'; 
+                vizElement.style.maxWidth = '1350px'; 
+                vizElement.style.width = '100%'; 
+                vizElement.style.minHeight = '587px'; 
+                vizElement.style.maxHeight = '887px'; 
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else if (divElement.offsetWidth > 500) { 
+                vizElement.style.minWidth = '420px'; 
+                vizElement.style.maxWidth = '1350px'; 
+                vizElement.style.width = '100%'; 
+                vizElement.style.minHeight = '587px'; 
+                vizElement.style.maxHeight = '887px'; 
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
             } else { 
-                vizElement.style.width='100%'; 
-                vizElement.style.height='1677px';
+                vizElement.style.width = '100%'; 
+                vizElement.style.height = '1677px';
             }
             var scriptElement = document.createElement('script');
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
