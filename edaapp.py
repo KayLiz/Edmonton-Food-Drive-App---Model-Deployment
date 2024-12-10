@@ -4,6 +4,7 @@ import plotly.express as px
 import joblib
 import sklearn
 import numpy as np
+import streamlit.components.v1 as components
 
 # Load the dataset with a specified encoding
 data = pd.read_csv('cleaned_data_2024.csv', encoding='latin1')
